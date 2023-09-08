@@ -1,7 +1,8 @@
 import pytest
 from .pages.product_page import ProductPage
 
-"""
+
+@pytest.mark.skip
 @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2",
@@ -21,8 +22,6 @@ def test_guest_can_add_product_to_basket(browser, link):
     page.add_product_to_basket()
     page.solve_quiz_and_get_code()
     page.checks_product_in_basket()
-
-"""
 
 
 def test_guest_cant_see_success_message_after_adding_product_to_bask(browser):

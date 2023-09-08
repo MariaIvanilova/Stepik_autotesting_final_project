@@ -16,3 +16,4 @@ class ProductPageLocators:
     TEXT_BASKET_COST = (By.CSS_SELECTOR, "div.alert:nth-of-type(3) .alertinner")
     BOOK_NAME = (By.CSS_SELECTOR, "div.product_main h1")
     BOOK_PRICE = (By.CSS_SELECTOR, "div.product_main .price_color")
+    SUCCESS_MESSAGE = (By.CLASS_NAME, "alert-success")

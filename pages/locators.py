@@ -12,7 +12,7 @@ class LoginPageLocators:
 
 class ProductPageLocators:
     ADD_BASKET = (By.CLASS_NAME, "btn-add-to-basket")
-    TEXT_ADD_TO_BASKET = (By.CSS_SELECTOR, "div.alert:nth-of-type(1)")
+    TEXT_BOOK_ADD_TO_BASKET = (By.CSS_SELECTOR, "#messages :nth-child(1) .alertinner strong")
     TEXT_BASKET_COST = (By.CSS_SELECTOR, "div.alert:nth-of-type(3) .alertinner")
     BOOK_NAME = (By.CSS_SELECTOR, "div.product_main h1")
     BOOK_PRICE = (By.CSS_SELECTOR, "div.product_main .price_color")

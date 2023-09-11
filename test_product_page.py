@@ -18,13 +18,13 @@ class TestUserAddToBasketFromProductPage:
         page.register_new_user(email, password)
         page.should_be_authorized_user()
 
-    @pytest.mark.need_review
     def test_user_cant_see_success_message(self, browser):
         link = "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/"
         page = ProductPage(browser, link)
         page.open()
         page.should_not_be_success_message()
 
+    @pytest.mark.need_review
     def test_user_can_add_product_to_basket(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handboaddok_209"
         page = ProductPage(browser, link)
